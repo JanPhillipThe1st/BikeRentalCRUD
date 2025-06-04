@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".RentalScreen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Select Time and Date"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        app:hintTextColor="@color/black">
+        <Button
+            android:id="@+id/btnRentFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:height="20dp"
+            app:cornerRadius="2dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/poppins"
+            android:text="RENT FROM"
+            android:textAlignment="textStart"
+            android:textColor="#101010"
+            app:strokeWidth=".75dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        app:hintTextColor="@color/black">
+        <Button
+            android:id="@+id/btnRentTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:height="20dp"
+            app:cornerRadius="2dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/poppins"
+            android:text="RENT UNTIL"
+            android:textAlignment="textStart"
+            android:textColor="#101010"
+            app:strokeWidth=".75dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="User's Location"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvUserLocation"
+            android:layout_width="match_parent"
+            android:text="Pagadian City"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/btnRentNow"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DA2D16"
+        android:fontFamily="@font/poppins"
+        android:text="RENT NOW"
+        android:textColor="@color/white" />
+</LinearLayout>
